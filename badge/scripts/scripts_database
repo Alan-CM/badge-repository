@@ -1,0 +1,127 @@
+create database badge_project;
+use badge_project;
+
+CREATE TABLE badge(
+ id int primary key auto_increment not null,
+ name_badge varchar(150) not null,
+ price decimal not null,
+ date_badge datetime,
+ country varchar(100)
+);
+
+ALTER TABLE badge MODIFY price DECIMAL(10,5);
+
+CREATE TABLE badgeNews(
+ idBadgeNews int primary key auto_increment not null,
+ dateBadgeNews datetime,
+ title varchar(150),
+ body varchar(250)
+);
+SELECT * FROM badge;
+
+INSERT INTO badge VALUES (1, 'Dolar', 16.95, '2024-01-10', 'USA'); 
+INSERT INTO badge VALUES (2, 'Dolar', 16.9661, '2024-01-09', 'USA'); 
+INSERT INTO badge VALUES (3, 'Dolar', 16.817, '2024-01-08', 'USA'); 
+INSERT INTO badge VALUES (4, 'Dolar', 16.866, '2024-01-07', 'USA'); 
+INSERT INTO badge VALUES (5, 'Dolar', 17.008, '2024-01-06', 'USA'); 
+INSERT INTO badge VALUES (6, 'Dolar', 17.003, '2024-01-05', 'USA'); 
+INSERT INTO badge VALUES (7, 'Dolar', 17.014, '2024-01-04', 'USA'); 
+INSERT INTO badge VALUES (8, 'Dolar', 16.9642, '2024-01-03', 'USA'); 
+INSERT INTO badge VALUES (9, 'Dolar', 16.954, '2024-01-02', 'USA'); 
+INSERT INTO badge VALUES (10, 'Dolar', 16.929, '2024-01-01', 'USA'); 
+INSERT INTO badge VALUES (11, 'Dolar', 16.918, '2023-12-31', 'USA'); 
+INSERT INTO badge VALUES (12, 'Dolar', 16.975, '2023-12-30', 'USA'); 
+INSERT INTO badge VALUES (13, 'Dolar', 17.013, '2023-12-29', 'USA'); 
+INSERT INTO badge VALUES (14, 'Dolar', 16.968, '2023-12-28', 'USA'); 
+INSERT INTO badge VALUES (15, 'Dolar', 17.022, '2023-12-27', 'USA'); 
+INSERT INTO badge VALUES (16, 'Dolar', 17.1414, '2023-12-26', 'USA'); 
+INSERT INTO badge VALUES (17, 'Dolar', 17.066, '2023-12-25', 'USA'); 
+INSERT INTO badge VALUES (18, 'Dolar', 17.1574, '2023-12-24', 'USA'); 
+INSERT INTO badge VALUES (19, 'Dolar', 17.184, '2023-12-23', 'USA'); 
+INSERT INTO badge VALUES (20, 'Dolar', 17.186, '2023-12-22', 'USA'); 
+INSERT INTO badge VALUES (21, 'Dolar', 17.3034, '2023-12-21', 'USA'); 
+INSERT INTO badge VALUES (22, 'Dolar', 17.3755, '2023-12-20', 'USA'); 
+INSERT INTO badge VALUES (23, 'Dolar', 17.347, '2023-12-19', 'USA'); 
+INSERT INTO badge VALUES (24, 'Dolar', 17.453, '2023-12-18', 'USA'); 
+INSERT INTO badge VALUES (25, 'Dolar', 17.258, '2023-12-17', 'USA'); 
+INSERT INTO badge VALUES (26, 'Dolar', 17.3775, '2023-12-16', 'USA'); 
+INSERT INTO badge VALUES (27, 'Dolar', 17.4522, '2023-12-15', 'USA'); 
+INSERT INTO badge VALUES (28, 'Dolar', 17.17, '2023-12-14', 'USA'); 
+INSERT INTO badge VALUES (29, 'Dolar', 17.3784, '2023-12-13', 'USA'); 
+INSERT INTO badge VALUES (30, 'Dolar', 17.276, '2023-12-12', 'USA'); 
+INSERT INTO badge VALUES (31, 'Dolar', 17.1356, '2023-12-11', 'USA'); 
+INSERT INTO badge VALUES (32, 'Dolar', 17.1645, '2023-12-10', 'USA'); 
+INSERT INTO badge VALUES (33, 'Dolar', 17.1, '2023-12-09', 'USA'); 
+INSERT INTO badge VALUES (34, 'Dolar', 17.179, '2023-12-08', 'USA'); 
+INSERT INTO badge VALUES (35, 'Dolar', 17.178, '2023-12-07', 'USA'); 
+
+------------------------------------------------
+INSERT INTO badge VALUES (36, 'Euro', 18.6189, '2024-01-10', 'EUR');
+INSERT INTO badge VALUES (37, 'Euro', 18.5367, '2024-01-09', 'EUR');
+INSERT INTO badge VALUES (38, 'Euro', 18.425, '2024-01-08', 'EUR');
+INSERT INTO badge VALUES (39, 'Euro', 18.4531, '2024-01-05', 'EUR');
+INSERT INTO badge VALUES (40, 'Euro', 18.6097, '2024-01-04', 'EUR'); 
+INSERT INTO badge VALUES (41, 'Euro', 18.569, '2024-01-03', 'EUR');
+INSERT INTO badge VALUES (42, 'Euro', 18.6133, '2024-01-02', 'EUR');
+INSERT INTO badge VALUES (43, 'Euro', 18.7353, '2024-01-01', 'EUR');
+INSERT INTO badge VALUES (44, 'Euro', 18.7104, '2023-12-29', 'EUR');
+INSERT INTO badge VALUES (45, 'Euro', 18.7218, '2023-12-28', 'EUR'); 
+INSERT INTO badge VALUES (46, 'Euro', 18.7832, '2023-12-27', 'EUR');
+INSERT INTO badge VALUES (47, 'Euro', 18.7438, '2023-12-26', 'EUR');
+INSERT INTO badge VALUES (48, 'Euro', 18.7262, '2023-12-25', 'EUR');
+INSERT INTO badge VALUES (49, 'Euro', 18.6818, '2023-12-22', 'EUR');
+INSERT INTO badge VALUES (50, 'Euro', 18.7378, '2023-12-21', 'EUR'); 
+-------------------------------------
+INSERT INTO badge VALUES (51, 'CHE', 19.9325, '2024-01-10', 'SWI');
+INSERT INTO badge VALUES (52, 'CHE', 19.8568, '2024-01-09', 'SWI');
+INSERT INTO badge VALUES (53, 'CHE', 19.8397, '2024-01-08', 'SWI');
+INSERT INTO badge VALUES (54, 'CHE', 19.8377, '2024-01-05', 'SWI');
+INSERT INTO badge VALUES (55, 'CHE', 19.9976, '2024-01-04', 'SWI');
+INSERT INTO badge VALUES (56, 'CHE', 20.0224, '2024-01-03', 'SWI');
+INSERT INTO badge VALUES (57, 'CHE', 20.1619, '2024-01-02', 'SWI');
+INSERT INTO badge VALUES (58, 'CHE', 20.1378, '2024-01-01', 'SWI');
+INSERT INTO badge VALUES (59, 'CHE', 20.0391, '2023-12-29', 'SWI');
+INSERT INTO badge VALUES (60, 'CHE', 20.0583, '2023-01-28', 'SWI');
+INSERT INTO badge VALUES (61, 'CHE', 19.8817, '2023-01-27', 'SWI');
+INSERT INTO badge VALUES (62, 'CHE', 19.8611, '2023-01-26', 'SWI');
+INSERT INTO badge VALUES (63, 'CHE', 19.8247, '2023-01-25', 'SWI');
+INSERT INTO badge VALUES (64, 'CHE', 19.8739, '2023-01-24', 'SWI');
+INSERT INTO badge VALUES (65, 'CHE', 19.8649, '2023-01-23', 'SWI');
+INSERT INTO badge VALUES (66, 'CHE', 19.8165, '2023-01-22', 'SWI'); 
+
+
+-------------------
+DELETE FROM badge;
+------------------
+DELETE FROM badgeNe;
+
+
+INSERT INTO badgeNews VALUES (1,'2023-12-07', 'Aumento', 'El mercado de México cerró con descensos este miércoles; los retrocesos de los sectores salud, servicios de telecomunicación, y materiales empujaron a los índices a la baja.'); 
+INSERT INTO badgeNews VALUES (2,'2024-01-10', '¿Cómo le fue al peso mexicano el año pasado y qué podría suceder en 2024?', 'El peso mexicano ha sido nombrado una de las monedas más fuertes a nivel global, aunque también enfrentó dificultades en 2023. Tuvo un año bastante ‘movido’ debido a una gran cantidad de factores políticos y económicos.');
+
+INSERT INTO badgeNews VALUES (3,'2024-01-09', 'Peso mexicano extiende depreciación ante el dólar por datos inflacionarios', 'El mercado de México cerró con descensos este miércoles; los retrocesos de los sectores salud, servicios de telecomunicación, y materiales empujaron a los índices a la baja.');
+INSERT INTO badgeNews VALUES (4,'2024-01-08', 'Aumento', 'De acuerdo con datos de Banco de México (Banxico), la moneda nacional finalizó la sesión con una pérdida de 0.19% frente al dólar; mientras que el tipo de cambio cerró en 16.9903 unidades por divisa estadounidense.');
+
+INSERT INTO badgeNews VALUES (5,'2024-01-07', '¡Peso mexicano presionado! Precio del dólar sube ', 'El peso mexicano despierta presionado este martes 9 de enero con el dólar avanzando en un entorno de cautela en los mercados financieros a la espera de los precios al consumidor en Estados Unidos correspondientes a diciembre.');
+
+INSERT INTO badgeNews VALUES (6,'2024-01-06', 'Peso mexicano se deprecia tras aceleración de la inflación durante diciembre', 'El peso mexicano retrocedió ante el dólar al cierre de operaciones de este martes, luego de que se registrara un repunte en el Índice Nacional de Precios al Consumidor (INPC) de diciembre.');
+
+INSERT INTO badgeNews VALUES (7,'2024-01-05', 'Peso mexicano, golpeado a la espera de inflación:', ' El peso mexicano inicia la sesión de este lunes 8 de enero ligeramente golpeado en un ambiente de cautela entre los inversionistas.');
+
+INSERT INTO badgeNews VALUES (8,'2024-01-04', 'Moodys advierte de crecientes desequilibrios en la economía de México', 'La agencia Moodys (NYSE:MCO) advirtió este jueves de crecientes desequilibrios internos y externos en la economía mexicana en el último año de la presidencia de Andrés Manuel López Obrador.');
+
+INSERT INTO badgeNews VALUES (9,'2024-01-03', 'Fracaso del peso mexicano: Precio del dólar vuelve a subir de 17.00 ', 'El peso mexicano inicia la sesión de este 4 de enero presionado frente al dólar. El golpe llegó tras la publicación de los datos laborales de Estados Unidos.');
+
+INSERT INTO badgeNews VALUES (10,'2024-01-02', 'Peso rompe racha negativa ante el dólar tras publicación de las minutas de la Fed', 'El peso mexicano registró una ligera apreciación ante el dólar luego de que las minutas de la Reserva Federal (Fed) dejaran la puerta abierta para un recorte a la tasa de interés en 2024.');
+
+INSERT INTO badgeNews VALUES (11,'2024-01-01', 'Inicio clave de un 2024 que pinta volátil: ojo a las minutas de la Fed y Banxico', 'La primera semana del 2024 tendrá una agenda económica modesta, pero con información que será clave para los mercados financieros en el inicio de un año que pinta volátil.');
+---------------------
+SELECT * FROM badgeNews;
+
+SELECT * FROM badge;
+
+-----------------------------
+ALTER TABLE badgeNews MODIFY dateBadgeNews datetime(6);
+
+DELETE FROM badgeNews;
+
